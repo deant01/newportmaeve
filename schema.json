@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "BookSeries",
-  "name": "The Newport-Maeve Chronicles",
+  "name": "The Newport Maeve Chronicles",
   "alternateName": "Newport Maeve Chronicles",
   "author": {
     "@type": "Person",
