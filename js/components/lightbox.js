@@ -1,3 +1,5 @@
+import { addEvent } from '../lib/event-registry.js';
+
 export function initLightbox() {
   const lb = document.getElementById('lightbox');
   const lbImg = document.getElementById('lightboxImg');
@@ -19,20 +21,20 @@ export function initLightbox() {
   }
 
   document.querySelectorAll('.char-card').forEach(card => {
-    card.addEventListener('click', () => {
+    addEvent(card, 'click', () => {
       const img = card.querySelector('img');
       if (img) openLightbox(img.src, img.alt);
     });
   });
 
   document.querySelectorAll('.map-container img').forEach(img => {
-    img.addEventListener('click', () => openLightbox(img.src, img.alt));
+    addEvent(img, 'click', () => openLightbox(img.src, img.alt));
   });
 
-  lb.addEventListener('click', closeLightbox);
-  lbImg.addEventListener('click', (e) => e.stopPropagation());
-  lbClose.addEventListener('click', closeLightbox);
-  document.addEventListener('keydown', (e) => {
+  addEvent(lb, 'click', closeLightbox);
+  addEvent(lbImg, 'click', (e) => e.stopPropagation());
+  addEvent(lbClose, 'click', closeLightbox);
+  addEvent(document, 'keydown', (e) => {
     if (e.key === 'Escape') closeLightbox();
   });
 }
