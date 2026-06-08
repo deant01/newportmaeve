@@ -15,6 +15,12 @@
   gap: 2px;
   max-width: 1400px;
   margin: 0 auto;
+  /* Reserve vertical space before cards are loaded to avoid layout jump
+     Card aspect ratio is 16/9; reserve ~2 rows on desktop so section
+     has enough height when content is loaded. Uses min() so it respects
+     the container max-width. */
+  /* Use viewport height in min() to avoid percentage resolution issues in calc() */
+  min-height: calc((min(100vh 1400px) / 3) * (9/16) * 2);
 }
 
 .char-card {
@@ -117,11 +123,15 @@
 @media (max-width: 900px) {
   .char-grid {
     grid-template-columns: 1fr 1fr;
+    /* 2 columns: reserve ~3 rows */
+    min-height: calc((min(100vh, 1400px) / 2) * (9/16) * 3);
   }
 }
 
 @media (max-width: 600px) {
   .char-grid {
     grid-template-columns: 1fr;
+    /* 1 column: reserve ~4 rows */
+    min-height: calc((min(100vh, 1400px) / 1) * (9/16) * 4);
   }
 }
