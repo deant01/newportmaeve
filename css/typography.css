@@ -1,3 +1,12 @@
+/* Local font-face declarations (load from assets/fonts) */
+@font-face {
+  font-family: 'Cinzel';
+  src: url('../assets/fonts/Cinzel-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 .section-label {
   font-family: 'Cinzel', serif;
   font-size: 10px;

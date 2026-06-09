@@ -61,7 +61,7 @@ Verification files at the repo root (`25e1fa98….txt`, `yandex_….html`) must 
 | Shared URLs | `data/site.json` (applied via `data-site-link` attributes) |
 | Section styling | `css/components/<section>.css` (linked in `index.html` `<head>`) |
 | Shared tokens & layout | `css/general.css`, `css/typography.css` |
-| Images | `assets/*.webp` |
+| Images | `assets/images/*.webp` |
 | Lightbox / scroll animations | `js/components/lightbox.js`, `js/components/scroll-reveal.js` |
 | Character cards / external links | `js/components/characters.js`, `js/components/site-links.js` |
 
