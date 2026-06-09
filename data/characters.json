@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Miroslav Dion",
+    "role": "First of the BloodBlessed",
+    "quote": "Outlived kings. Shaped empires. Still standing.",
+    "image": "assets/images/Miroslav-Dion-water.webp"
+  },
+  {
+    "name": "The Protector",
+    "role": "Angel. OneTrue Holy Warrior.",
+    "quote": "I do not protect out of mercy. I protect because I must.",
+    "image": "assets/images/The-Protector-water.webp"
+  },
+  {
+    "name": "The Unknown Emissary",
+    "role": "OneTrue Emissary",
+    "quote": "He steps through the ages as if through a quiet hall.",
+    "image": "assets/images/The-Entity-water.webp"
+  },
+  {
+    "name": "George L'Aris",
+    "role": "Vampire Enforcer",
+    "quote": "Thirst makes beasts. Duty makes monsters.",
+    "image": "assets/images/George-the-enforcer-water.webp"
+  },
+  {
+    "name": "Aland",
+    "role": "Orphan. Street Con Artist.",
+    "quote": "The city is built on hunger. I just give it a reason to open its hand.",
+    "image": "assets/images/Aland-water.webp"
+  },
+  {
+    "name": "Unnamed Bride",
+    "role": "Arranged Bride. Civic Center Wedding.",
+    "quote": "She had escaped one fate — only to collide with another.",
+    "image": "assets/images/Unnamed-Bride-water.webp"
+  }
+]

@@ -13,164 +13,37 @@
 <meta property="og:site_name" content="The Newport Maeve Chronicles">
 <meta property="og:title" content="The Newport Maeve Chronicles | An immortal. A city of steam &amp; shadows. A debt come due.">
 <meta property="og:description" content="A gothic noir fantasy by Dean Jordanov. In Newport Maeve, a city of brass and steam, a thousand-year-old vampire is handed an assignment he cannot refuse. The prequel audiobook is free on YouTube.">
-<meta property="og:image" content="https://newportmaeve.com/cover.webp">
+<meta property="og:image" content="https://newportmaeve.com/assets/images/cover.webp">
 <meta property="og:url" content="https://newportmaeve.com/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Newport Maeve Chronicles | An immortal. A city of steam &amp; shadows. A debt come due.">
 <meta name="twitter:description" content="A gothic noir fantasy by Dean Jordanov. In Newport Maeve, a city of brass and steam, a thousand-year-old vampire takes an assignment he cannot refuse.">
-<meta name="twitter:image" content="https://newportmaeve.com/cover.webp">
+<meta name="twitter:image" content="https://newportmaeve.com/assets/images/cover.webp">
 <title>The Newport Maeve Chronicles | Gothic Noir Fantasy</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BookSeries",
-  "name": "The Newport Maeve Chronicles",
-  "alternateName": "Newport Maeve Chronicles",
-  "author": {
-    "@type": "Person",
-    "name": "Dean Jordanov"
-  },
-  "genre": ["Dark Fantasy", "Urban Gothic", "Gothic Fiction"],
-  "description": "A dark fantasy series set in an alternate world where vampires, angels, and demonic forces exist alongside an industrial-age society of brass, steam, and ruthless ambition. Follows Miroslav Dion, the world's first vampire, as he confronts a demonic threat rising in the city of Newport Maeve.",
-  "inLanguage": "en",
-  "hasPart": {
-    "@type": "Book",
-    "name": "Miroslav Dion: A Glimpse of Centuries Past",
-    "bookFormat": "https://schema.org/AudiobookFormat",
-    "author": { "@type": "Person", "name": "Dean Jordanov" },
-    "position": "Prequel",
-    "url": "https://youtu.be/gg5DZfQgrho"
-  },
-  "character": [
-    { "@type": "Person", "name": "Miroslav Dion", "description": "The world's first vampire; owner of the Ironclad Consortium." },
-    { "@type": "Person", "name": "The Protector", "description": "An angelic warrior assigned to guard Newport Maeve." },
-    { "@type": "Person", "name": "The Unknown Emissary", "description": "A timeless emissary of the One True." },
-    { "@type": "Person", "name": "George L'Aris", "description": "A vampire enforcer of the Ironclad Consortium." },
-    { "@type": "Person", "name": "Aland", "description": "An orphan and street con artist of Newport Maeve." }
-  ]
-}
-</script>
-<style>
-  :root {
-    --gold: #C9A84C; --gold-light: #E8C97A; --gold-dim: #7A6030;
-    --crimson: #8B1A1A; --crimson-bright: #C0392B;
-    --bg-deep: #080808; --bg-card: #0E0C0A; --bg-section: #0B0908;
-    --text: #D4C9B0; --text-dim: #7A7060; --border: #2A2218;
-  }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body { background: var(--bg-deep); color: var(--text); font-family: 'Crimson Text', Georgia, serif; font-size: 18px; line-height: 1.7; overflow-x: hidden; cursor: default; }
-  body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; opacity: 0.35; }
-  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 0 3rem; height: 64px; background: linear-gradient(to bottom, rgba(8,8,8,0.97) 0%, rgba(8,8,8,0) 100%); backdrop-filter: blur(4px); }
-  .nav-logo { font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 4px; color: var(--gold); text-transform: uppercase; text-decoration: none; }
-  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-  .nav-links a { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); text-decoration: none; transition: color 0.3s; }
-  .nav-links a:hover { color: var(--gold-light); }
-  .hero { position: relative; height: 100vh; min-height: 600px; display: flex; align-items: flex-end; overflow: hidden; }
-  .hero-bg { position: absolute; inset: 0; background-image: url('cover.webp'); background-size: cover; background-position: center 30%; transform: scale(1.05); animation: heroZoom 20s ease-out forwards; }
-  @keyframes heroZoom { from { transform: scale(1.05); } to { transform: scale(1.0); } }
-  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(8,8,8,0.2) 0%, rgba(8,8,8,0.1) 40%, rgba(8,8,8,0.7) 70%, rgba(8,8,8,1) 100%); }
-  .hero-content { position: relative; z-index: 2; width: 100%; padding: 0 4rem 6rem; animation: heroFade 2s ease-out forwards; }
-  @keyframes heroFade { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-  .hero-eyebrow { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 6px; color: var(--gold-light); text-transform: uppercase; margin-bottom: 1rem; }
-  .hero-title { font-family: 'Cinzel', serif; font-size: clamp(2.4rem, 6vw, 5.5rem); font-weight: 700; color: var(--gold-light); line-height: 1.05; text-shadow: 0 4px 40px rgba(0,0,0,0.9); margin-bottom: 0.5rem; }
-  .hero-subtitle { font-family: 'Crimson Text', serif; font-style: italic; font-size: clamp(1.1rem, 2vw, 1.5rem); color: var(--text-dim); margin-bottom: 2.5rem; }
-  .hero-cta { display: inline-flex; align-items: center; gap: 0.75rem; font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--bg-deep); background: var(--gold); padding: 14px 32px; text-decoration: none; transition: background 0.3s, transform 0.2s; clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%); }
-  .hero-cta:hover { background: var(--gold-light); transform: translateY(-2px); }
-  .scroll-hint { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 6px; opacity: 0.9; animation: bounce 2s infinite; }
-  .scroll-hint span { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 3px; color: var(--gold-light); }
-  .scroll-hint svg { stroke: var(--gold-light); }
-  @keyframes bounce { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(6px); } }
-  section { padding: 6rem 4rem; }
-  .section-label { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 6px; color: var(--gold-light); text-transform: uppercase; margin-bottom: 0.75rem; }
-  .section-title { font-family: 'Cinzel', serif; font-size: clamp(1.6rem, 3vw, 2.6rem); color: var(--gold-light); font-weight: 600; margin-bottom: 1.5rem; line-height: 1.2; }
-  .divider { width: 60px; height: 1px; background: var(--gold-dim); margin: 1.5rem 0; }
-  .about { background: var(--bg-section); display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; max-width: 1200px; margin: 0 auto; }
-  .about-text p { color: var(--text); margin-bottom: 1.2rem; font-size: 1.05rem; }
-  .about-text p em { color: var(--gold); font-style: italic; }
-  .about-img-wrap { border: 1px solid var(--border); box-shadow: 0 20px 60px rgba(0,0,0,0.8); }
-  .about-img-wrap img { width: 100%; display: block; filter: brightness(0.9); }
-  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem; }
-  .stat { border-left: 2px solid var(--gold-dim); padding-left: 1rem; }
-  .stat-num { font-family: 'Cinzel', serif; font-size: 2rem; color: var(--gold); line-height: 1; }
-  .stat-label { font-size: 0.8rem; color: var(--text-dim); letter-spacing: 1px; }
-  .listen-section { text-align: center; background: linear-gradient(to bottom, var(--bg-deep), #100A08, var(--bg-deep)); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-  .listen-inner { max-width: 700px; margin: 0 auto; }
-  .yt-embed { margin: 2.5rem auto; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 20px 60px rgba(0,0,0,0.8), 0 0 0 1px var(--gold-dim); }
-  .yt-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-  .characters-section { background: var(--bg-section); max-width: 100%; }
-  .characters-header { text-align: center; max-width: 600px; margin: 0 auto 4rem; }
-  .char-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; max-width: 1400px; margin: 0 auto; }
-  .char-card { position: relative; overflow: hidden; aspect-ratio: 16/9; cursor: pointer; background: #000; }
-  .char-card img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform 0.6s ease, filter 0.6s ease; filter: brightness(0.7) saturate(0.8); }
-  .char-card:hover img { transform: scale(1.05); filter: brightness(0.9) saturate(1); }
-  .char-card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.3) 50%, transparent 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem; transition: opacity 0.3s; }
-  .char-card-name { font-family: 'Cinzel', serif; font-size: 1.1rem; color: var(--gold-light); font-weight: 600; margin-bottom: 2px; }
-  .char-card-role { font-size: 0.8rem; color: var(--text-dim); letter-spacing: 1px; font-style: italic; margin-bottom: 0.6rem; }
-  .char-card-quote { font-size: 0.82rem; color: var(--text); font-style: italic; line-height: 1.4; opacity: 0; transform: translateY(8px); transition: opacity 0.4s, transform 0.4s; border-left: 2px solid var(--crimson); padding-left: 0.6rem; }
-  .char-card:hover .char-card-quote { opacity: 1; transform: translateY(0); }
-  .quotes-section { background: var(--bg-deep); text-align: center; }
-  .quotes-inner { max-width: 820px; margin: 0 auto; }
-  .pull-quote { margin: 2.5rem 0; position: relative; padding: 0 1rem; }
-  .pull-quote p { font-family: 'Crimson Text', serif; font-style: italic; font-size: clamp(1.1rem, 1.8vw, 1.4rem); color: var(--text); line-height: 1.6; }
-  .pull-quote cite { display: block; margin-top: 0.85rem; font-family: 'Cinzel', serif; font-style: normal; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold-light); }
-  .map-section { background: var(--bg-deep); text-align: center; }
-  .map-header { max-width: 600px; margin: 0 auto 3rem; }
-  .map-container { max-width: 1200px; margin: 0 auto; position: relative; border: 1px solid var(--border); box-shadow: 0 0 60px rgba(0,0,0,0.8), 0 0 0 1px var(--gold-dim); overflow: hidden; }
-  .map-container img { width: 100%; display: block; transition: transform 0.4s ease; }
-  .map-container:hover img { transform: scale(1.02); }
-  .map-caption { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 4px; color: var(--gold-light); margin-top: 1.5rem; text-transform: uppercase; }
-  .author-section { background: var(--bg-section); }
-  .author-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; max-width: 1200px; margin: 0 auto; }
-  .author-grid .about-img-wrap { order: -1; }
-  .author-text p { color: var(--text); margin-bottom: 1.2rem; font-size: 1.05rem; }
-  .author-text p em { color: var(--gold); font-style: italic; }
-  .connect-section { background: linear-gradient(to bottom, var(--bg-deep), #0D0804); text-align: center; border-top: 1px solid var(--border); }
-  .connect-inner { max-width: 800px; margin: 0 auto; }
-  .links-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 3rem; }
-  .link-card { display: flex; align-items: center; gap: 1.2rem; padding: 1.5rem 2rem; background: var(--bg-card); border: 1px solid var(--border); text-decoration: none; color: var(--text); transition: border-color 0.3s, transform 0.2s, background 0.3s; position: relative; overflow: hidden; }
-  .link-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--gold-dim); transition: background 0.3s; }
-  .link-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); background: #120E0A; }
-  .link-card:hover::before { background: var(--gold); }
-  .link-icon { font-size: 1.8rem; flex-shrink: 0; }
-  .link-label { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 3px; color: var(--gold-dim); text-transform: uppercase; margin-bottom: 2px; transition: color 0.3s; }
-  .link-card:hover .link-label { color: var(--gold); }
-  .link-desc { font-size: 0.9rem; color: var(--text-dim); }
-  footer { border-top: 1px solid var(--border); padding: 3rem 4rem; display: flex; justify-content: space-between; align-items: center; background: #050505; }
-  .footer-logo { font-family: 'Cinzel', serif; font-size: 16px; color: var(--gold-dim); letter-spacing: 3px; }
-  .footer-sub { font-size: 0.8rem; color: var(--text-dim); letter-spacing: 2px; margin-top: 4px; }
-  .footer-credit { font-size: 0.82rem; color: var(--text-dim); text-align: right; }
-  .ornament { display: flex; align-items: center; gap: 1rem; margin: 1.5rem 0; }
-  .ornament-line { flex: 1; height: 1px; background: var(--border); }
-  .ornament-diamond { width: 6px; height: 6px; background: var(--gold-dim); transform: rotate(45deg); flex-shrink: 0; }
-  .char-card::after { content: '\2922'; position: absolute; top: 0.8rem; right: 0.9rem; font-size: 1.1rem; color: var(--gold-light); opacity: 0; transition: opacity 0.3s; text-shadow: 0 0 8px rgba(0,0,0,0.9); pointer-events: none; }
-  .char-card:hover::after { opacity: 0.85; }
-  .lightbox { position: fixed; inset: 0; z-index: 1000; display: none; align-items: center; justify-content: center; background: rgba(4,4,4,0.94); backdrop-filter: blur(6px); padding: 4vh 4vw; cursor: zoom-out; animation: lbFade 0.25s ease-out; }
-  .lightbox.open { display: flex; }
-  @keyframes lbFade { from { opacity: 0; } to { opacity: 1; } }
-  .lightbox img { max-width: 100%; max-height: 92vh; object-fit: contain; border: 1px solid var(--gold-dim); box-shadow: 0 0 80px rgba(0,0,0,0.9); cursor: default; }
-  .lightbox-close { position: absolute; top: 1.4rem; right: 1.4rem; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-family: 'Cinzel', serif; font-size: 1.7rem; color: var(--gold); background: rgba(8,8,8,0.6); border: 1px solid var(--gold-dim); cursor: pointer; transition: background 0.2s, color 0.2s; line-height: 1; }
-  .lightbox-close:hover { background: var(--gold); color: var(--bg-deep); }
-  .lightbox-hint { position: absolute; bottom: 1.4rem; left: 50%; transform: translateX(-50%); font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); }
-  @media (max-width: 900px) {
-    nav { padding: 0 1.5rem; }
-    .nav-links { gap: 1.2rem; }
-    section { padding: 4rem 1.5rem; }
-    .about, .author-grid { grid-template-columns: 1fr; gap: 2rem; }
-    .author-grid .about-img-wrap { order: 0; }
-    .char-grid { grid-template-columns: 1fr 1fr; }
-    .links-grid { grid-template-columns: 1fr; }
-    footer { flex-direction: column; gap: 1rem; text-align: center; }
-    .footer-credit { text-align: center; }
-    .hero-content { padding: 0 1.5rem 4rem; }
-  }
-  @media (max-width: 600px) {
-    .char-grid { grid-template-columns: 1fr; }
-    .nav-links { display: none; }
-  }
-</style>
+  <!-- Preload hero image and local fonts (Cinzel + Crimson Text). Keep these in sync with css/typography.css -->
+  <link rel="preload" as="image" href="assets/images/cover.webp" fetchpriority="high">
+  <link rel="preload" as="font" href="assets/fonts/Cinzel,Crimson_Text/Cinzel/Cinzel-VariableFont_wght.ttf" type="font/ttf" crossorigin>
+  <link rel="preload" as="font" href="assets/fonts/Cinzel,Crimson_Text/Crimson_Text/CrimsonText-Regular.ttf" type="font/ttf" crossorigin>
+  <link rel="preload" as="font" href="assets/fonts/Cinzel,Crimson_Text/Crimson_Text/CrimsonText-Italic.ttf" type="font/ttf" crossorigin>
+  <link rel="preload" as="font" href="assets/fonts/Cinzel,Crimson_Text/Crimson_Text/CrimsonText-SemiBold.ttf" type="font/ttf" crossorigin>
+  <link rel="preload" as="font" href="assets/fonts/Cinzel,Crimson_Text/Crimson_Text/CrimsonText-SemiBoldItalic.ttf" type="font/ttf" crossorigin>
+  <link rel="preload" as="font" href="assets/fonts/Cinzel,Crimson_Text/Crimson_Text/CrimsonText-Bold.ttf" type="font/ttf" crossorigin>
+  <link rel="preload" as="font" href="assets/fonts/Cinzel,Crimson_Text/Crimson_Text/CrimsonText-BoldItalic.ttf" type="font/ttf" crossorigin>
+<script type="application/ld+json" src="data/schema.json"></script>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/general.css">
+<link rel="stylesheet" href="css/typography.css">
+<link rel="stylesheet" href="css/components/nav.css">
+<link rel="stylesheet" href="css/components/hero.css">
+<link rel="stylesheet" href="css/components/about.css">
+<link rel="stylesheet" href="css/components/listen.css">
+<link rel="stylesheet" href="css/components/characters.css">
+<link rel="stylesheet" href="css/components/quotes.css">
+<link rel="stylesheet" href="css/components/map.css">
+<link rel="stylesheet" href="css/components/author.css">
+<link rel="stylesheet" href="css/components/connect.css">
+<link rel="stylesheet" href="css/components/footer.css">
+<link rel="stylesheet" href="css/components/lightbox.css">
 </head>
 <body>
 
@@ -193,7 +66,7 @@
     <p class="hero-eyebrow">Dean Jordanov presents</p>
     <h1 class="hero-title">The Newport Maeve<br>Chronicles</h1>
     <p class="hero-subtitle">An immortal. A city of steam &amp; shadows. A debt come due.</p>
-    <a href="https://youtu.be/gg5DZfQgrho?si=nwGPkU6QQ4LaS6uQ" target="_blank" rel="noopener" class="hero-cta">&#9654;&nbsp; Listen to the Prequel</a>
+    <a href="https://youtu.be/gg5DZfQgrho?si=nwGPkU6QQ4LaS6uQ" data-site-link="youtube" target="_blank" rel="noopener" class="hero-cta">&#9654;&nbsp; Listen to the Prequel</a>
   </div>
   <div class="scroll-hint">
     <span>Scroll</span>
@@ -201,7 +74,7 @@
   </div>
 </section>
 
-<section id="about" style="background:var(--bg-section);">
+<section id="about">
   <div class="about">
     <div class="about-text">
       <p class="section-label">The Series</p>
@@ -219,7 +92,7 @@
       </div>
     </div>
     <div class="about-img-wrap">
-      <img src="ironclad.jpg" alt="The Ironclad Consortium tower in Newport Maeve">
+      <img src="assets/images/ironclad.webp" alt="The Ironclad Consortium tower in Newport Maeve">
     </div>
   </div>
 </section>
@@ -229,11 +102,11 @@
     <p class="section-label">The Audiobook</p>
     <h2 class="section-title">Miroslav Dion:<br>A Glimpse of Centuries Past</h2>
     <div class="ornament"><div class="ornament-line"></div><div class="ornament-diamond"></div><div class="ornament-line"></div></div>
-    <p style="color:var(--text-dim); font-style:italic;">The official prequel to the Newport Maeve Chronicles. Nine chapters. One immortal. A city that does not yet know what is coming.</p>
+    <p class="section-lead">The official prequel to the Newport Maeve Chronicles. Nine chapters. One immortal. A city that does not yet know what is coming.</p>
     <div class="yt-embed">
-      <iframe src="https://www.youtube-nocookie.com/embed/gg5DZfQgrho" title="Newport Maeve Chronicles Prequel Audiobook" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      <iframe data-site-link="youtube-embed" src="https://www.youtube-nocookie.com/embed/gg5DZfQgrho" title="Newport Maeve Chronicles Prequel Audiobook" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
     </div>
-    <a href="https://youtu.be/gg5DZfQgrho?si=nwGPkU6QQ4LaS6uQ" target="_blank" rel="noopener" style="display:inline-block; font-family:'Cinzel',serif; font-size:11px; letter-spacing:3px; color:var(--gold); border:1px solid var(--gold-dim); padding:12px 28px; text-decoration:none; text-transform:uppercase; transition:all 0.3s;" onmouseover="this.style.background='rgba(201,168,76,0.1)'" onmouseout="this.style.background='transparent'">Watch on YouTube &rarr;</a>
+    <a href="https://youtu.be/gg5DZfQgrho?si=nwGPkU6QQ4LaS6uQ" data-site-link="youtube" target="_blank" rel="noopener" class="yt-link">Watch on YouTube &rarr;</a>
   </div>
 </section>
 
@@ -242,59 +115,10 @@
     <p class="section-label">The Cast</p>
     <h2 class="section-title">Characters of Newport Maeve</h2>
     <div class="ornament"><div class="ornament-line"></div><div class="ornament-diamond"></div><div class="ornament-line"></div></div>
-    <p style="color:var(--text-dim); font-style:italic;">Immortals and orphans. Angels and enforcers. In Newport Maeve, everyone is something other than what they appear.</p>
+    <p class="section-lead">Immortals and orphans. Angels and enforcers. In Newport Maeve, everyone is something other than what they appear.</p>
   </div>
-  <div class="char-grid">
-    <div class="char-card">
-      <img src="Miroslav-Dion-water.jpg" alt="Miroslav Dion — First of the BloodBlessed, a character from The Newport Maeve Chronicles" loading="lazy">
-      <div class="char-card-overlay">
-        <div class="char-card-name">Miroslav Dion</div>
-        <div class="char-card-role">First of the BloodBlessed</div>
-        <div class="char-card-quote">Outlived kings. Shaped empires. Still standing.</div>
-      </div>
-    </div>
-    <div class="char-card">
-      <img src="The-Protector-water.jpg" alt="The Protector — Angel. OneTrue Holy Warrior., a character from The Newport Maeve Chronicles" loading="lazy">
-      <div class="char-card-overlay">
-        <div class="char-card-name">The Protector</div>
-        <div class="char-card-role">Angel. OneTrue Holy Warrior.</div>
-        <div class="char-card-quote">I do not protect out of mercy. I protect because I must.</div>
-      </div>
-    </div>
-    <div class="char-card">
-      <img src="The-Entity-water.jpg" alt="The Unknown Emissary — OneTrue Emissary, a character from The Newport Maeve Chronicles" loading="lazy">
-      <div class="char-card-overlay">
-        <div class="char-card-name">The Unknown Emissary</div>
-        <div class="char-card-role">OneTrue Emissary</div>
-        <div class="char-card-quote">He steps through the ages as if through a quiet hall.</div>
-      </div>
-    </div>
-    <div class="char-card">
-      <img src="George-the-enforcer-water.jpg" alt="George L'Aris — Vampire Enforcer, a character from The Newport Maeve Chronicles" loading="lazy">
-      <div class="char-card-overlay">
-        <div class="char-card-name">George L'Aris</div>
-        <div class="char-card-role">Vampire Enforcer</div>
-        <div class="char-card-quote">Thirst makes beasts. Duty makes monsters.</div>
-      </div>
-    </div>
-    <div class="char-card">
-      <img src="Aland-water.jpg" alt="Aland — Orphan. Street Con Artist., a character from The Newport Maeve Chronicles" loading="lazy">
-      <div class="char-card-overlay">
-        <div class="char-card-name">Aland</div>
-        <div class="char-card-role">Orphan. Street Con Artist.</div>
-        <div class="char-card-quote">The city is built on hunger. I just give it a reason to open its hand.</div>
-      </div>
-    </div>
-    <div class="char-card">
-      <img src="Unnamed-Bride-water.jpg" alt="Unnamed Bride — Arranged Bride. Civic Center Wedding., a character from The Newport Maeve Chronicles" loading="lazy">
-      <div class="char-card-overlay">
-        <div class="char-card-name">Unnamed Bride</div>
-        <div class="char-card-role">Arranged Bride. Civic Center Wedding.</div>
-        <div class="char-card-quote">She had escaped one fate — only to collide with another.</div>
-      </div>
-    </div>
-  </div>
-  <p style="text-align:center; margin-top:2rem; font-size:0.85rem; color:var(--text-dim); font-style:italic; letter-spacing:1px;">Hover to reveal. More on the <a href="https://newport-maeve.fandom.com/wiki/Newport_Maeve_Chronicles_Wiki" style="color:var(--gold-dim); text-decoration:none;" target="_blank">fandom wiki &rarr;</a></p>
+  <div class="char-grid"></div>
+  <p class="char-footnote">Hover to reveal. More on the <a href="https://newport-maeve.fandom.com/wiki/Newport_Maeve_Chronicles_Wiki" data-site-link="fandomWiki" target="_blank">fandom wiki &rarr;</a></p>
 </section>
 
 <section id="quotes" class="quotes-section">
@@ -322,10 +146,10 @@
     <p class="section-label">The World</p>
     <h2 class="section-title">Newport Maeve</h2>
     <div class="ornament"><div class="ornament-line"></div><div class="ornament-diamond"></div><div class="ornament-line"></div></div>
-    <p style="color:var(--text-dim); font-style:italic;">Where the Zarina River meets the Moon Sea. The Confederacy's crown jewel and monument of its technological and logistic progress.</p>
+    <p class="section-lead">Where the Zarina River meets the Moon Sea. The Confederacy's crown jewel and monument of its technological and logistic progress.</p>
   </div>
   <div class="map-container">
-    <img src="map.jpg" alt="..." loading="lazy" style="cursor: zoom-in;" onclick="openLightbox(this.src, this.alt)">
+    <img src="assets/images/map.webp" alt="..." loading="lazy">
   </div>
   <p class="map-caption">Newport Maeve — City Map</p>
 </section>
@@ -333,7 +157,7 @@
 <section id="author" class="author-section">
   <div class="author-grid">
     <div class="about-img-wrap">
-      <img src="architect.jpg" alt="Dean Jordanov, creator of The Newport Maeve Chronicles">
+      <img src="assets/images/architect.webp" alt="Dean Jordanov, creator of The Newport Maeve Chronicles">
     </div>
     <div class="author-text">
       <p class="section-label">The Author</p>
@@ -349,21 +173,21 @@
     <p class="section-label">Follow the Chronicles</p>
     <h2 class="section-title">Join the World</h2>
     <div class="ornament"><div class="ornament-line"></div><div class="ornament-diamond"></div><div class="ornament-line"></div></div>
-    <p style="color:var(--text-dim); font-style:italic;">The story is growing. Follow production updates, explore the lore, and see the world take shape.</p>
+    <p class="section-lead">The story is growing. Follow production updates, explore the lore, and see the world take shape.</p>
     <div class="links-grid">
-      <a href="https://youtu.be/gg5DZfQgrho?si=nwGPkU6QQ4LaS6uQ" target="_blank" rel="noopener" class="link-card">
+      <a href="https://youtu.be/gg5DZfQgrho?si=nwGPkU6QQ4LaS6uQ" data-site-link="youtube" target="_blank" rel="noopener" class="link-card">
         <div class="link-icon">&#9654;</div>
         <div><div class="link-label">YouTube</div><div class="link-desc">Official prequel audiobook</div></div>
       </a>
-      <a href="https://newport-maeve.fandom.com/wiki/Newport_Maeve_Chronicles_Wiki" target="_blank" rel="noopener" class="link-card">
+      <a href="https://newport-maeve.fandom.com/wiki/Newport_Maeve_Chronicles_Wiki" data-site-link="fandomWiki" target="_blank" rel="noopener" class="link-card">
         <div class="link-icon">&#128214;</div>
         <div><div class="link-label">Fandom Wiki</div><div class="link-desc">Lore, characters &amp; world-building</div></div>
       </a>
-      <a href="https://www.deviantart.com/deant01/gallery/92908164/Newport Maeve-chroncles-art" target="_blank" rel="noopener" class="link-card">
+      <a href="https://www.deviantart.com/deant01/gallery/92908164/Newport Maeve-chroncles-art" data-site-link="deviantArt" target="_blank" rel="noopener" class="link-card">
         <div class="link-icon">&#127912;</div>
         <div><div class="link-label">DeviantArt</div><div class="link-desc">Character concept designs &amp; art</div></div>
       </a>
-      <a href="https://www.facebook.com/NewportMaeveChronicles/" target="_blank" rel="noopener" class="link-card">
+      <a href="https://www.facebook.com/NewportMaeveChronicles/" data-site-link="facebook" target="_blank" rel="noopener" class="link-card">
         <div class="link-icon">&#128226;</div>
         <div><div class="link-label">Facebook</div><div class="link-desc">Production announcements</div></div>
       </a>
@@ -382,41 +206,9 @@
     <div class="footer-logo">Newport Maeve Chronicles</div>
     <div class="footer-sub">World of Shadows &amp; Power</div>
   </div>
-  <div class="footer-credit">Created by Dean Jordanov<br><span style="font-size:0.75rem; color:#3A3028;">&copy; All rights reserved</span></div>
+  <div class="footer-credit">Created by Dean Jordanov<br><span class="footer-copy">&copy; All rights reserved</span></div>
 </footer>
 
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; } });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.stat, .link-card, .char-card, .pull-quote').forEach(el => {
-    el.style.opacity = '0'; el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-  });
-
-  const lb = document.getElementById('lightbox');
-  const lbImg = document.getElementById('lightboxImg');
-  const lbClose = document.getElementById('lightboxClose');
-  function openLightbox(src, alt) {
-    lbImg.src = src; lbImg.alt = alt || '';
-    lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeLightbox() {
-    lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = ''; lbImg.src = '';
-  }
-  document.querySelectorAll('.char-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const img = card.querySelector('img');
-      if (img) openLightbox(img.src, img.alt);
-    });
-  });
-  lb.addEventListener('click', closeLightbox);
-  lbImg.addEventListener('click', (e) => e.stopPropagation());
-  lbClose.addEventListener('click', closeLightbox);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
-</script>
+<script type="module" src="js/main.js"></script>
 </body>
 </html>

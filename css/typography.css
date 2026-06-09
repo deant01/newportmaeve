@@ -1,0 +1,117 @@
+/*
+ Local font-face declarations (load from `assets/fonts`)
+
+ Notes:
+ - Fonts are preloaded in `index.html` to improve LCP for the hero.
+ - Prefer adding `woff2` sources for production; keep `ttf` as a fallback.
+ - `font-display: swap` is used to avoid invisible text during loading.
+*/
+@font-face {
+  font-family: 'Cinzel';
+  src: local('Cinzel'),
+       url('../assets/fonts/Cinzel,Crimson_Text/Cinzel/Cinzel-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Local Crimson Text faces */
+@font-face {
+  font-family: 'Crimson Text';
+  src: local('Crimson Text'), local('CrimsonText-Regular'),
+       url('../assets/fonts/Cinzel,Crimson_Text/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Crimson Text';
+  src: local('Crimson Text Italic'), local('CrimsonText-Italic'),
+       url('../assets/fonts/Cinzel,Crimson_Text/Crimson_Text/CrimsonText-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Crimson Text';
+  src: local('Crimson Text SemiBold'), local('CrimsonText-SemiBold'),
+       url('../assets/fonts/Cinzel,Crimson_Text/Crimson_Text/CrimsonText-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Crimson Text';
+  src: local('Crimson Text SemiBold Italic'), local('CrimsonText-SemiBoldItalic'),
+       url('../assets/fonts/Cinzel,Crimson_Text/Crimson_Text/CrimsonText-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Crimson Text';
+  src: local('Crimson Text Bold'), local('CrimsonText-Bold'),
+       url('../assets/fonts/Cinzel,Crimson_Text/Crimson_Text/CrimsonText-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Crimson Text';
+  src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'),
+       url('../assets/fonts/Cinzel,Crimson_Text/Crimson_Text/CrimsonText-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+.section-label {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 6px;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  color: var(--gold-light);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.section-lead {
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.divider {
+  width: 60px;
+  height: 1px;
+  background: var(--gold-dim);
+  margin: 1.5rem 0;
+}
+
+.ornament {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.ornament-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.ornament-diamond {
+  width: 6px;
+  height: 6px;
+  background: var(--gold-dim);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
