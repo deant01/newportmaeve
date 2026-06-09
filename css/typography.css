@@ -1,4 +1,11 @@
-/* Local font-face declarations (load from assets/fonts) */
+/*
+ Local font-face declarations (load from `assets/fonts`)
+
+ Notes:
+ - Fonts are preloaded in `index.html` to improve LCP for the hero.
+ - Prefer adding `woff2` sources for production; keep `ttf` as a fallback.
+ - `font-display: swap` is used to avoid invisible text during loading.
+*/
 @font-face {
   font-family: 'Cinzel';
   src: local('Cinzel'),

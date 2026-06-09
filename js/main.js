@@ -1,3 +1,11 @@
+/*
+ Main entry script
+
+ - Initializes UI modules on DOMContentLoaded.
+ - Contains a small font/image preloading helper that waits for the
+   hero image and locally-hosted fonts before revealing the hero.
+ - Adds `fonts-loaded` to `<html>` when fonts are ready (or on timeout).
+*/
 import { initCharacters } from './components/characters.js';
 import { initSiteLinks } from './components/site-links.js';
 import { initLightbox } from './components/lightbox.js';
