@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BookSeries",
+  "name": "The Newport Maeve Chronicles",
+  "alternateName": "Newport Maeve Chronicles",
+  "author": {
+    "@type": "Person",
+    "name": "Dean Jordanov"
+  },
+  "genre": ["Dark Fantasy", "Urban Gothic", "Gothic Fiction"],
+  "description": "A dark fantasy series set in an alternate world where vampires, angels, and demonic forces exist alongside an industrial-age society of brass, steam, and ruthless ambition. Follows Miroslav Dion, the world's first vampire, as he confronts a demonic threat rising in the city of Newport Maeve.",
+  "inLanguage": "en",
+  "hasPart": {
+    "@type": "Book",
+    "name": "Miroslav Dion: A Glimpse of Centuries Past",
+    "bookFormat": "https://schema.org/AudiobookFormat",
+    "author": { "@type": "Person", "name": "Dean Jordanov" },
+    "position": "Prequel",
+    "url": "https://youtu.be/gg5DZfQgrho"
+  },
+  "character": [
+    { "@type": "Person", "name": "Miroslav Dion", "description": "The world's first vampire; owner of the Ironclad Consortium." },
+    { "@type": "Person", "name": "The Protector", "description": "An angelic warrior assigned to guard Newport Maeve." },
+    { "@type": "Person", "name": "The Unknown Emissary", "description": "A timeless emissary of the One True." },
+    { "@type": "Person", "name": "George L'Aris", "description": "A vampire enforcer of the Ironclad Consortium." },
+    { "@type": "Person", "name": "Aland", "description": "An orphan and street con artist of Newport Maeve." }
+  ]
+}
