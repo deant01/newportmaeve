@@ -1,3 +1,46 @@
+# robots.txt — The Newport Maeve Chronicles
+# Search engines and AI crawlers are explicitly welcome.
+
+# Traditional search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google Gemini / AI Overviews
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Everyone else
 User-agent: *
 Allow: /
 
