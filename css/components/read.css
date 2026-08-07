@@ -1,0 +1,194 @@
+/* Reading page — extends the city/character page visual system */
+
+.read-hero {
+  min-height: 500px;
+}
+
+.read-hero-inner {
+  min-height: 300px;
+}
+
+.read-hero-copy {
+  max-width: 760px;
+  padding-right: 12rem;
+}
+
+.read-part-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(320px, 32vw);
+  text-align: right;
+}
+
+.read-part-nav > span {
+  display: block;
+  margin-bottom: 0.7rem;
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+}
+
+.read-part-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.55rem 0.8rem;
+}
+
+.read-part-links a {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--text-dim);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.25s;
+}
+
+.read-part-links a:hover {
+  color: var(--gold-light);
+}
+
+.read-epub,
+.read-back a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--gold-dim);
+  padding: 12px 26px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.read-epub {
+  margin-top: 2rem;
+}
+
+.read-epub[aria-disabled="true"] {
+  color: var(--text-dim);
+  border-color: var(--border);
+  cursor: default;
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.read-main {
+  background: var(--bg-deep);
+}
+
+.read-story {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5rem 4rem 6rem;
+}
+
+.read-part {
+  padding: 0 0 5rem;
+  scroll-margin-top: 90px;
+}
+
+.read-part + .read-part {
+  padding-top: 1rem;
+}
+
+.read-part h2 {
+  margin-bottom: 1rem;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--gold-light);
+}
+
+.read-ornament {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 180px;
+  margin: 1.1rem 0 2.5rem;
+}
+
+.read-ornament span {
+  height: 1px;
+  flex: 1;
+  background: var(--border);
+}
+
+.read-ornament i {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  background: var(--gold-dim);
+  transform: rotate(45deg);
+}
+
+.read-part p {
+  margin: 0 0 1.25rem;
+  color: var(--text);
+  font-size: 1.12rem;
+  line-height: 1.9;
+}
+
+.read-part p:first-of-type {
+  color: var(--gold-light);
+  font-style: italic;
+}
+
+.read-back {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.read-back a:hover {
+  background: var(--gold);
+  color: var(--bg-deep);
+}
+
+@media (max-width: 900px) {
+  .read-hero {
+    min-height: 0;
+  }
+
+  .read-hero-inner {
+    min-height: 0;
+  }
+
+  .read-part-nav {
+    position: static;
+    width: 100%;
+    margin: 0 0 2.5rem;
+    text-align: left;
+  }
+
+  .read-part-links {
+    justify-content: flex-start;
+  }
+
+  .read-hero-copy {
+    max-width: none;
+    padding-right: 0;
+  }
+
+  .read-story {
+    padding: 4rem 1.5rem 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .read-part-links {
+    gap: 0.7rem 1rem;
+  }
+
+  .read-part p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+}
